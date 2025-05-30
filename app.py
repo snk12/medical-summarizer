@@ -136,6 +136,54 @@ with st.sidebar:
     show_detailed_analysis = st.checkbox("Show detailed analysis", value=True)
     show_entity_confidence = st.checkbox("Show entity confidence", value=False)
 
+# Move this BEFORE the pipeline check
+    st.subheader("📋 Quick Demo Samples")
+    st.info("⚠️ Copy a sample below FIRST, then initialize the AI pipeline!")
+    
+    with st.expander("🔴 High Risk Stroke Patient", expanded=False):
+        stroke_sample = """PATIENT DISCHARGE SUMMARY
+    
+    Patient Demographics:
+    Age: 60 years
+    Gender: Male
+    Date of Admission: 2025-5-29
+    Date of Discharge: 2025-5-30
+    
+    Chief Complaint:
+    Patient presented with symptoms related to stroke.
+    
+    Medical History:
+    Patient has a known history of stroke. Patient reports compliance with prescribed medications.
+    
+    Medications:
+    - Metformin 25mg twice daily
+    
+    Procedures Performed:
+    - Ekg: shows improvement
+    - Colonoscopy: normal
+    
+    Assessment and Plan:
+    Patient's stroke is improving. Continue current treatment plan with modifications as noted.
+    
+    Discharge Instructions:
+    Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
+    
+    Follow-up:
+    Follow up with primary care in 3 months."""
+        
+        st.code(stroke_sample, language=None)
+    
+    with st.expander("🟡 Moderate Risk Diabetes", expanded=False):
+        diabetes_sample = """Patient Demographics: Age: 45 years, Female
+    Chief Complaint: Routine diabetes management  
+    Medical History: Well-controlled diabetes mellitus type 2
+    Medications: Metformin 500mg twice daily
+    Assessment: Diabetes well-controlled
+    Follow-up: Primary care in 3 months"""
+        
+        st.code(diabetes_sample, language=None)
+
+    
 # Main content area
 if not st.session_state.pipeline:
     st.info("👈 Please initialize the AI pipeline in the sidebar to begin.")
