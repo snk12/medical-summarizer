@@ -176,7 +176,12 @@ Follow up with primary care in 2 weeks."""
     
     st.text_area("Sample document:", value=sample_text, height=300, disabled=True)
     st.info("This is what a typical medical document looks like. The AI will extract entities, generate summaries, and assess risk levels.")
-    PATIENT DISCHARGE SUMMARY
+    # Add after the existing sample document
+    st.subheader("📋 Quick Demo Samples")
+    st.info("Copy any sample below and paste into the text area above for instant demo!")
+    
+    with st.expander("🔴 High Risk Stroke Patient", expanded=False):
+       stroke_sample = """PATIENT DISCHARGE SUMMARY
     
     Patient Demographics:
     Age: 60 years
@@ -204,7 +209,19 @@ Follow up with primary care in 2 weeks."""
     Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
     
     Follow-up:
-    Follow up with primary care in 3 months.
+    Follow up with primary care in 3 months."""
+       
+       st.code(stroke_sample, language=None)
+    
+    with st.expander("🟡 Moderate Risk Diabetes", expanded=False):
+       diabetes_sample = """Patient Demographics: Age: 45 years, Female
+    Chief Complaint: Routine diabetes management
+    Medical History: Well-controlled diabetes mellitus type 2
+    Medications: Metformin 500mg twice daily
+    Assessment: Diabetes well-controlled
+    Follow-up: Primary care in 3 months"""
+       
+       st.code(diabetes_sample, language=None)
 
 else:
     # Document input section
