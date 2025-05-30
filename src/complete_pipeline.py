@@ -29,21 +29,24 @@ class ModelManager:
 
     @st.cache_resource
     def load_all_models(_self):
-        """Load all AI models with Streamlit caching"""
         models = {}
         
         with st.spinner("Loading Sentence Transformer..."):
             models['sentence_transformer'] = SentenceTransformer('all-MiniLM-L6-v2')
         
         with st.spinner("Loading BART Summarizer..."):
-            models['bart_summarizer'] = hf_pipeline(
-                "summarization",
-                model="facebook/bart-large-cnn",
-                device=0 if _self.device == "cuda" else -1,
-                max_length=150,
-                min_length=50,
-                do_sample=False
-            )
+            try:
+                models['bart_summarizer'] = hf_pipeline(
+                    "summarization",
+                    model="facebook/bart-large-cnn",
+                    device=-1,  # Force CPU
+                    max_length=150,
+                    min_length=50,
+                    do_sample=False
+                )
+            except Exception as e:
+                st.warning(f"BART model failed to load: {e}")
+                models['bart_summarizer'] = None
         
         with st.spinner("Loading Medical NER..."):
             models['medical_ner'] = hf_pipeline(
@@ -60,7 +63,9 @@ class ModelManager:
 
     def summarize_text(self, text, max_length=150, min_length=50):
         try:
-            # Truncate text if too long
+            if 'bart_summarizer' not in self.models or self.models['bart_summarizer'] is None:
+                raise Exception("BART model not available")
+            
             words = text.split()
             if len(words) > 800:
                 text = ' '.join(words[:800])
@@ -73,8 +78,7 @@ class ModelManager:
             )
             return result[0]['summary_text']
         except Exception as e:
-            return f"Error generating summary: {str(e)}"
-
+            raise Exception(f"BART summarization failed: {str(e)}")
     def extract_medical_entities(self, text):
         try:
             if 'medical_ner' not in self.models:
