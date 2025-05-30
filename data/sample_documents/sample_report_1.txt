@@ -1,30 +1,29 @@
 PATIENT DISCHARGE SUMMARY
 
 Patient Demographics:
-Age: 86 years
-Gender: Female
-Date of Admission: 2025-05-27
+Age: 60 years
+Gender: Male
+Date of Admission: 2025-05-29
 Date of Discharge: 2025-05-30
 
 Chief Complaint:
-Patient presented with symptoms related to myocardial infarction.
+Patient presented with symptoms related to stroke.
 
 Medical History:
-Patient has a known history of myocardial infarction and chronic kidney disease. Patient reports compliance with prescribed medications.
+Patient has a known history of stroke. Patient reports compliance with prescribed medications.
 
 Medications:
-- Prednisone 50mg daily
-- Amoxicillin 50mg three times daily
-- Metoprolol 25mg daily
+- Metformin 25mg twice daily
 
 Procedures Performed:
-- Mri: abnormal
+- Ekg: shows improvement
+- Colonoscopy: normal
 
 Assessment and Plan:
-Patient's myocardial infarction is stable. Continue current treatment plan with modifications as noted.
+Patient's stroke is improving. Continue current treatment plan with modifications as noted.
 
 Discharge Instructions:
-Follow up with primary care physician. Maintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening.
+Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
 
 Follow-up:
 Follow up with primary care in 3 months.
