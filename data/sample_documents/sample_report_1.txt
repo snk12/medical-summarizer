@@ -1,0 +1,30 @@
+PATIENT DISCHARGE SUMMARY
+
+Patient Demographics:
+Age: 86 years
+Gender: Female
+Date of Admission: 2025-05-27
+Date of Discharge: 2025-05-30
+
+Chief Complaint:
+Patient presented with symptoms related to myocardial infarction.
+
+Medical History:
+Patient has a known history of myocardial infarction and chronic kidney disease. Patient reports compliance with prescribed medications.
+
+Medications:
+- Prednisone 50mg daily
+- Amoxicillin 50mg three times daily
+- Metoprolol 25mg daily
+
+Procedures Performed:
+- Mri: abnormal
+
+Assessment and Plan:
+Patient's myocardial infarction is stable. Continue current treatment plan with modifications as noted.
+
+Discharge Instructions:
+Follow up with primary care physician. Maintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening.
+
+Follow-up:
+Follow up with primary care in 3 months.

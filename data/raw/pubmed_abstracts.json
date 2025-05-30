@@ -1,0 +1,142 @@
+[
+  {
+    "pmid": "40409589",
+    "title": "[PEDIAB'AIDE: A pediatric diabetes training tool for the pharmacy team].",
+    "abstract": "In 2023, type 1 diabetes (T1DM) affected more than 31,000&#xa0;young people under the age of 20 in France, with the number of new cases rising every year. The onset of the disease is acute and abrupt in children, sometimes leading to diagnosis after ketoacidosis and a stay in a pediatric intensive care unit. Healthcare professionals must be trained to diagnose the disease as soon as the first signs appear. What's more, once the diagnosis has been made, a great deal of information needs to be assimilated by the child and his or her parents, to help them cope with the disease. As the dispensing pharmacist is at the heart of the patient's health, it is vital that his or her knowledge is regularly updated.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:17.311610"
+  },
+  {
+    "pmid": "40240181",
+    "title": "Management of diabetes in patients hospitalized for acute cardiac events: Joint position paper from the French Society of Cardiology and the French-speaking Diabetes Society.",
+    "abstract": "The working group consisted of a pharmacy student, a hospital pharmacist and a pediatric endocrinologist. The aim was to create an e-learning program on diabetes in children, a fun learning document aimed at health students and health professionals for their continuing education. It was to contain information and best practices in line with the most common first discharge practices for newly-diagnosed diabetic children. The tool was offered to pharmacy students in order to assess the improvement in knowledge via a questionnaire before and after using it, using a Wilcoxon statistical test. They were also asked to complete a satisfaction questionnaire.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:17.311627"
+  },
+  {
+    "pmid": "40052035",
+    "title": "The Validation of Diabetes Mellitus Discharge Planning Module Incorporated into the Summary of Diabetes Self-Care Activity.",
+    "abstract": "The tool produced is called PEDIAB'AIDE, in the form of a pdf file with links to navigate between the various slides. The tool details two prescriptions for newly-diagnosed T1DM patients: one case with a pump, the other with pen injections. The tool comprises 40&#xa0;slides, diagnostic information and advice associated with the patients' discharge prescriptions. A total of 26&#xa0;DFASP1 students completed the evaluation questionnaire before and after using the tool. Students' marks improved significantly, with an initial average of 13.8/20 and a final average of 16.3/20 (P&lt;0.001). Students found the tool simple (100%), clear (100%) and appreciated its visual appeal (92%). One hundred percent appreciated its use, and 96% thought it could help train healthcare professionals. The positive elements highlighted by the students were the intuitive nature of the tool, the real-life counter situation and the explanations. They also highlighted a few areas for improvement, notably the addition of summary sheets, and access to the tool without an Internet connection.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:17.311629"
+  },
+  {
+    "pmid": "40004100",
+    "title": "Positive Evolution of a Child Suffering from Caudal Regression Syndrome and Agenesia Sacra After Treatment with Growth Hormone and Rehabilitation.",
+    "abstract": "Delayed diagnosis of T1DM in children can have major consequences for their subsequent care. This tool helps to improve the knowledge of pharmacy students. It remains to be tested with pharmacists and disseminated further.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:17.311632"
+  },
+  {
+    "pmid": "39705071",
+    "title": "Identification of Gender Differences in Acute Myocardial Infarction Presentation and Management at Aga Khan University Hospital-Pakistan: Natural Language Processing Application in a Dataset of Patients With Cardiovascular Disease.",
+    "abstract": "Patients with type 2 diabetes, but also older patients with type 1 diabetes, are at major risk of cardiovascular morbidity and death. After an acute cardiac event, the prognosis of patients with diabetes is impaired, with clear increases in in-hospital and long-term morbidity and deaths. Both hyper- and hypoglycaemia are deleterious after an acute cardiac event, and the decision to start intravenous insulin is often challenging. Moreover, some antidiabetic treatments have cardioprotective effects, and the onset of an acute cardiac event provides an opportunity to shift to these treatments. The objective of this position statement is to offer practical tools to cardiologists seeking to improve the care of patients with diabetes hospitalized for an acute cardiac event, and to optimize collaboration between cardiologists and diabetologists. After a summary of the evidence for antidiabetic treatments in patients with acute cardiac events, we propose an algorithm to start and adapt intravenous insulin in the most severe patients, and conclude with standard insulin protocols or oral treatments at discharge. We also discuss appropriate antidiabetic treatment of these patients at discharge, based on the main cardiological diagnosis, kidney function and antidiabetic strategies. Finally, situations in which the diabetologist must be consulted are discussed.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:17.311634"
+  },
+  {
+    "pmid": "40440325",
+    "title": "Walking versus running and GFR trajectory in healthy young adults.",
+    "abstract": "The effect of physical activity on the primary prevention of chronic kidney disease (CKD) is unclear. We assessed walking and running as exercise behaviors and their associations with individual-level risk for kidney function decline.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:19.545324"
+  },
+  {
+    "pmid": "40440265",
+    "title": "Changes in individuals' glaucoma progression velocity after IOP-lowering therapy: A systematic review.",
+    "abstract": "We conducted a historical&#xa0;cohort study in which we followed 20,976 young adults. Participants were interviewed periodically about their lifestyle,&#xa0;and clinical parameters were assessed. The decline in estimated glomerular filtration rate (eGFR) over time was divided into quartiles. Using logistic regressions, we estimated the odds ratio (OR) for being in the slowest declining quartile by consistency of running or walking. We also used Cox proportional hazards models to estimate the associations of physical activity with future eGFR&#x2009;&lt;&#x2009;90&#x2009;ml/min/1.73m2. All models were adjusted for age, sex, smoking status, family history of kidney diseases, BMI, blood-pressure, baseline eGFR and serum cholesterol.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:19.545343"
+  },
+  {
+    "pmid": "40439451",
+    "title": "Long-Term Clinical Outcomes of Adults Hospitalized for COVID-19 Pneumonia.",
+    "abstract": "During 9.5 years of follow-up, the eGFR decreased by 0.97&#x2009;ml/min/1.73m2 per year. Participants who reported in two consecutive questionnaires on walking as a leisure time activity had an OR of 1.21 (95% confidence interval: 1.03-1.41) to have slow eGFR decline compared to those who were physically inactive. Participants who predominantly reported on running as their physical activity were less likely to be slow eGFR decliners (OR:0.81, 95% CI:0.71-0.93). Similarly, consistent walking was associated with decreased risk for future eGFR&#x2009;&lt;&#x2009;90&#x2009;ml/min/1.73m2 in contrast to consistent running which was associated with an increased risk for reduced eGFR. All associations showed dose dependent effects in terms of the number of weekly activity sessions.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:19.545347"
+  },
+  {
+    "pmid": "40439364",
+    "title": "Efficacy and Safety of Lenvatinib versus Atezolizumab Plus Bevacizumab in the Treatment of Unresectable Hepatocellular Carcinoma: A Systematic Review and Meta-Analysis.",
+    "abstract": "Consistent walking, as opposed to consistent running, was associated with slower eGFR decline compared to inactive participants. These associations start already within the normal GFR range.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:19.545349"
+  },
+  {
+    "pmid": "40438878",
+    "title": "Multidisciplinary Management and Staged Surgical Treatment for Chronic Thromboembolic Pulmonary Hypertension and Subclavian Vein Thrombosis Caused by Venous Thoracic Outlet Syndrome.",
+    "abstract": "Primary open-angle glaucoma (POAG) is a chronic progressive optic neuropathy often associated with increased intraocular pressure (IOP). Monitoring glaucoma progression velocity, for example, the rate of change in global indices such as mean deviation (MD), is a common way to determine whether functional deterioration has occurred. This systematic review aims to assess changes in glaucoma progression velocity in response to IOP-lowering therapy at an individual level. A systematic review was conducted following Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines. A comprehensive search of PubMed, Cochrane CENTRAL, and ClinicalTrials.gov from database inception through November 12, 2023, was conducted for randomized clinical trials involving patients with POAG, normal tension glaucoma, or progressive ocular hypertension who received IOP-lowering therapy with a target IOP reduction &#x2265;20% from baseline. Included trials were required to report visual field progression velocity information for individual patients before and after intervention. One study was found to meet inclusion criteria and, therefore, synthesis of data and meta-analysis were unable to be performed. The study reports on 139 eyes of 109 patients from the Ocular Hypertension Treatment Study who reached a POAG endpoint. In these patients, the post-treatment rate of MD change (-0.27&#x2009;&#xb1;&#x2009;0.7 dB/year) was significantly slower than the pre-treatment rate (-0.51&#x2009;&#xb1;&#x2009;0.8), P&#x2009;&lt;&#x2009;0.01. In addition, the rate of MD change significantly correlated with mean IOP reduction (p&#x2009;&lt;&#x2009;0.001). The singular study demonstrated that IOP-lowering therapy did variably slow glaucoma progression rate in that patient cohort. There is a need for more studies that focus on individual patients' responses to glaucoma treatment. Furthermore, this information should be used to classify the magnitude of patients' responsiveness to IOP reduction. Future studies should report pre- and post-intervention progression velocities.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:19.545352"
+  },
+  {
+    "pmid": "40439058",
+    "title": "Cardiac angiosarcoma in acute pericardial tamponade with hemoptysis: A case report.",
+    "abstract": "Primary cardiac angiosarcoma is a relatively rare tumor that frequently metastasizes by the time of diagnosis, with a poor prognosis. Currently, there is no uniform treatment, with surgical resection, radiotherapy, and chemotherapy being the mainstays of treatment. We report the case of a man in his early 30s who presented to the emergency department with hemoptysis and was found to have massive pericardial effusion and right atrial occupancy upon investigation. Subsequent examination revealed hypermetabolic foci in the lungs and femur, and a final biopsy confirmed the presence of a primary cardiac angiosarcoma. The patient died 3 days after diagnosis due to cardiopulmonary failure, with a survival period of 4 months from symptom onset to death. This report describes one of the few cases of cardiac tumor with respiratory symptoms.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:21.321567"
+  },
+  {
+    "pmid": "40438878",
+    "title": "Multidisciplinary Management and Staged Surgical Treatment for Chronic Thromboembolic Pulmonary Hypertension and Subclavian Vein Thrombosis Caused by Venous Thoracic Outlet Syndrome.",
+    "abstract": "Chronic thromboembolic pulmonary hypertension (CTEPH) is an uncommon complication of deep vein thrombosis (DVT) and pulmonary embolism (PE), occurring in 3-5% of patients despite therapeutic anticoagulation. Venous thoracic outlet syndrome (VTOS) causing subclavian vein (SCV) thrombosis is also an uncommon condition, not frequently associated with clinically significant PE. In this report, we present two patients with CTEPH and SCV thrombosis caused by VTOS who had successful multidisciplinary management and staged surgical treatment for both conditions. Each patient was young and otherwise healthy before presenting with progressively worsening shortness of breath. Both were found to have multiple peripheral PE and features of respiratory failure characteristic of CTEPH, along with axillary-SCV thrombosis and no other source of DVT. Each patient was treated with anticoagulation and riociguat but had ongoing pulmonary symptoms, and staged surgical treatment was recommended. The first stage was conducted by bilateral pulmonary thromboendarterectomy performed under deep hypothermic circulatory arrest. The second stage was conducted several months later after resolution of pulmonary hypertension, by paraclavicular thoracic outlet decompression that included complete first rib resection with a patent axillary-SCV on subsequent upper extremity imaging. Each patient recovered well with resolution of respiratory and upper extremity symptoms and a return to unrestricted activity by three months after the second operation. These patients are some of the first to have successful staged surgical treatment for CTEPH and SCV thrombosis caused by VTOS, illustrating the value of comprehensive multidisciplinary management for this unusual combination of rare conditions.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:21.321583"
+  },
+  {
+    "pmid": "40438819",
+    "title": "Navigating Diagnostic Delays: A Case of Takayasu Arteritis Complicated by Acute Heart Failure and Vascular Compromise in a 37-Year-Old Woman From Cameroon.",
+    "abstract": "Takayasu arteritis (TAK) is a rare form of large-vessel vasculitis that significantly impacts cardiovascular health, leading to severe complications such as acute heart failure (AHF). Its rarity in Cameroon may be attributed to limited awareness, underdiagnosis, and a lack of published data on the condition. We report the case of a 37-year-old female patient who presented with AHF and secondary hypertension, chest pain, and AHF after undergoing umbilical hernia repair two weeks prior. Initial symptoms included dyspnea at rest (New York Heart Association (NYHA) stage 4), orthopnea, paroxysmal nocturnal dyspnea, body swelling, and chest pain. Her medical records indicated mildly elevated blood pressure and an inter-arm blood pressure discrepancy, which previous healthcare providers had overlooked. On examination, she exhibited signs of respiratory distress, jugular venous distention, and a notable discrepancy in blood pressure between her arms. Investigations revealed elevated inflammatory markers (CRP: &gt;200 mg/L), and significant findings on imaging, notably, a point-of-care bedside cardiac ultrasound showed a left ventricular ejection fraction of 30%. An arterial duplex ultrasound demonstrated complete occlusion of the left common carotid artery and severe stenosis of the left subclavian artery, supporting a diagnosis of AHF complicating TAK during the pulseless phase. The patient also met four of the minor Ishikawa criteria, including elevated erythrocyte sedimentation rate (ESR) and significant aortic insufficiency. Treatment was promptly initiated with furosemide for AHF management, followed by lisinopril and bisoprolol as her hypervolemic state improved. High-dose corticosteroids were prescribed to address the vasculitis. The patient showed clinical improvement, with dyspnea at rest resolving and her functional status improving to NYHA stage 3. However, she later developed renal impairment attributed to cardiorenal syndrome and requested transfer to a closer medical facility. While plans for further management and control of inflammatory markers were made, she unfortunately passed away a few weeks after discharge. This case underscores the challenges in diagnosing and managing TAK, especially in regions where the disease is rare, highlighting the need for heightened clinical suspicion in similar presentations.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:21.321585"
+  },
+  {
+    "pmid": "40432916",
+    "title": "Cardiac metastasis in papillary thyroid carcinoma: a case report and literature review.",
+    "abstract": "Metastasis of malignant tumors to the heart is rare in clinical practice, particularly in papillary thyroid carcinoma (PTC). This report presents the case of a male patient diagnosed with PTC who underwent radical surgery and received I131 treatment. During the fourth year of follow-up, he developed cervical lymph node metastasis. Despite systemic treatment, the patient was hospitalized in the seventh year due to a recurrent cough and expectoration. Anti-infective therapies proved ineffective, and imaging revealed lung metastasis. An echocardiogram identified a hypoechoic mass measuring 5.3 cm by 3.2 cm in the right ventricle, attached to the lateral wall and between the anterior and posterior leaflets, indicating cardiac metastasis. Following diagnosis, the patient's condition deteriorated rapidly, culminating in death due to heart failure and severe infection. It is well-established that thyroid cancer can metastasize through both hematogenous and lymphatic pathways, with the lungs and brain being the most common sites, followed by the bones and liver. Cardiac metastasis, however, is exceedingly rare, and clinical reports are scarce. This case underscores the importance of considering atypical metastatic sites in advanced thyroid cancer and highlights the aggressive potential of the disease in certain patients. We hope this case raises awareness among oncologists.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:21.321587"
+  },
+  {
+    "pmid": "40432468",
+    "title": "[Cardiogenic shock and biventricular thrombi as a rare presentation of thyrotoxic cardiomyopathy: a case report].",
+    "abstract": "Thyrotoxic cardiomyopathy is a rare but dreaded form of dilated cardiomyopathy. Its prompt diagnosis is crucial, not only due to the elevated risk of cardiovascular events and mortality, but also because cardiac function may fully recover once a euthyroid state is achieved. Furthermore, thyrotoxicosis is associated with a hypercoagulable state, known to increase the risk of thrombotic events regardless of the CHA2DS2-VA score. However, identification of intracardiac biventricular thrombi is an exceedingly rare presentation. We report the case of a 50-year-old woman, who had previously undergone total thyroidectomy, who presented to the emergency department with acute heart failure (INTERMACS 3). Echocardiography revealed a severely dilated left ventricle and a reduced ejection fraction with biventricular thrombi, further complicated by pulmonary thromboembolism. Investigation revealed an undiagnosed recurrence of intrathoracic goiter which, in addition to ongoing levothyroxine supplementation, led to the development of a thyrotoxic cardiomyopathy. Following the excision of the remaining thyroid tissue, she evolved with complete recovery of cardiac function. This case illustrates a unique presentation of a rare disease, highlighting the importance of keeping in mind etiologic causes that might initially be ruled out.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:21.321589"
+  },
+  {
+    "pmid": "40440907",
+    "title": "Xuanfei Baidu Formula confers protection against viral pneumonia by modulating CD8<sup>+</sup> T cell proliferation via MAPK signalling pathway.",
+    "abstract": "Viral pneumonia is a common clinical infectious disease in which host immunity plays a pivotal role in its onset and progression. A compromised adaptive immune response, particularly involving CD8<sup>+</sup> T cells, is a fundamental pathophysiological feature of viral pneumonia. The Xuanfei Baidu Formula (XFBD), recognized as one of the \"three medicines and three prescriptions\" for the effective clinical management of Coronavirus Disease 2019 (COVID-19) in China, has been shown to enhance lymphocyte counts in patients with pneumonia. However, the pharmacological mechanisms and active compounds of XFBD in modulating T-cell therapy for viral pneumonia remain unclear.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:23.391272"
+  },
+  {
+    "pmid": "40440705",
+    "title": "The impact of different pulmonary rehabilitation approaches on fibrotic interstitial lung disease: a comparative randomized trial.",
+    "abstract": "This study aims to elucidate the pharmacological mechanisms and therapeutic components of XFBD in modulating adaptive immune CD8<sup>+</sup> T cells, thereby providing an experimental basis for its clinical application.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:23.391287"
+  },
+  {
+    "pmid": "40440629",
+    "title": "Respiratory viruses Ct values and association with clinical outcomes among adults visiting the ED with lower respiratory tract infections.",
+    "abstract": "A murine model of pneumonia was established through intranasal administration of Influenza A Virus (IAV) and the Delta variant of SARS-CoV-2. Treatment with XFBD or oseltamivir was conducted over a period of 5 or 7 days. Lung protection was evaluated by measuring pulmonary viral titers, inflammatory factors, and conducting histopathological examinations. Clinical data analysis involved assessing alterations in the quantity and functionality of T cells in patients infected with influenza and COVID-19. The therapeutic potential of XFBD in modulating T cell activity was ascertained in TCRbeta<sup>-</sup>delta<sup>-</sup> mice. Flow cytometry was employed to analyze changes in T cells and functional factors of CD8<sup>+</sup> T cells in both lung tissue and blood samples. Transcriptomic analysis and western blot were utilized to identify XFBD targets involved in the regulation of CD8<sup>+</sup> T cells. High-performance liquid chromatography (HPLC) was used to characterize XFBD and its principal components, while molecular docking studies elucidated the molecular mechanisms of key compounds. Primary CD8<sup>+</sup> T cells were stimulated with CD3/CD28 to develop an in vitro activation model. The active compounds in XFBD that influence CD8<sup>+</sup> T cell proliferation via the MAPK pathway were evaluated using Carboxyfluorescein Succinimidyl Ester (CFSE) assay.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:23.391291"
+  },
+  {
+    "pmid": "40439890",
+    "title": "Kawasaki disease in the pre- and post-COVID-19 era: shifts in patterns and outcomes from a multi-center study.",
+    "abstract": "Our research findings indicate that XFBD can alleviate lung inflammation and ameliorate damage caused by immune imbalances induced by viral infections. XFBD significantly improves the condition of viral pneumonia by enhancing the infiltration and functionality of T cells, particularly CD8<sup>+</sup> T cells, within the lungs. The therapeutic efficacy of XFBD is substantially reduced in T cell-deficient mice. XFBD primarily influences CD8<sup>+</sup> T cell proliferation, which is associated with the mitogen-activated protein kinase (MAPK) signaling pathway. Tissue distribution and molecular binding experiments identified polydatin and naringenin as the key compounds that facilitate CD8<sup>+</sup> T cell proliferation through the MAPK signaling pathway.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:23.391294"
+  },
+  {
+    "pmid": "40439758",
+    "title": "Nutritional management and practices in patients with bronchiolitis on non-invasive ventilation using a total face mask: an international survey in French network.",
+    "abstract": "In conclusion, we found that XFBD regulates CD8<sup>+</sup> T cell proliferation through the MAPK signaling pathway, thereby combating viral infection, which helps explain the theory and scientific principle of drug action and provides a scientific basis for the clinical application of XFBD.",
+    "source": "pubmed",
+    "collected_date": "2025-05-30T05:52:23.391296"
+  }
+]

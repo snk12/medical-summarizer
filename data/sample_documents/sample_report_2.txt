@@ -1,0 +1,30 @@
+PATIENT DISCHARGE SUMMARY
+
+Patient Demographics:
+Age: 79 years
+Gender: Male
+Date of Admission: 2025-05-22
+Date of Discharge: 2025-05-30
+
+Chief Complaint:
+Patient presented with symptoms related to chronic kidney disease.
+
+Medical History:
+Patient has a known history of chronic kidney disease. Patient reports compliance with prescribed medications.
+
+Medications:
+- Aspirin 10mg daily
+- Furosemide 100mg daily
+
+Procedures Performed:
+- Ct Scan: within normal limits
+- Blood Work: abnormal
+
+Assessment and Plan:
+Patient's chronic kidney disease is stable. Continue current treatment plan with modifications as noted.
+
+Discharge Instructions:
+Maintain healthy diet and exercise as tolerated. Continue medications as prescribed. Monitor symptoms and return if worsening.
+
+Follow-up:
+Follow up with primary care in 1 month.

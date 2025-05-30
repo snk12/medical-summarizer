@@ -1,0 +1,408 @@
+[
+  {
+    "report_id": "RPT_7976",
+    "patient_age": 86,
+    "patient_gender": "Female",
+    "conditions": [
+      "myocardial infarction",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      "prednisone",
+      "amoxicillin",
+      "metoprolol"
+    ],
+    "procedures": [
+      "MRI"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 86 years\nGender: Female\nDate of Admission: 2025-05-27\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to myocardial infarction.\n\nMedical History:\nPatient has a known history of myocardial infarction and chronic kidney disease. Patient reports compliance with prescribed medications.\n\nMedications:\n- Prednisone 50mg daily\n- Amoxicillin 50mg three times daily\n- Metoprolol 25mg daily\n\nProcedures Performed:\n- Mri: abnormal\n\nAssessment and Plan:\nPatient's myocardial infarction is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nFollow up with primary care physician. Maintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392017",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_8771",
+    "patient_age": 79,
+    "patient_gender": "Male",
+    "conditions": [
+      "chronic kidney disease"
+    ],
+    "medications": [
+      "aspirin",
+      "furosemide"
+    ],
+    "procedures": [
+      "CT scan",
+      "blood work"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 79 years\nGender: Male\nDate of Admission: 2025-05-22\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to chronic kidney disease.\n\nMedical History:\nPatient has a known history of chronic kidney disease. Patient reports compliance with prescribed medications.\n\nMedications:\n- Aspirin 10mg daily\n- Furosemide 100mg daily\n\nProcedures Performed:\n- Ct Scan: within normal limits\n- Blood Work: abnormal\n\nAssessment and Plan:\nPatient's chronic kidney disease is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMaintain healthy diet and exercise as tolerated. Continue medications as prescribed. Monitor symptoms and return if worsening.\n\nFollow-up:\nFollow up with primary care in 1 month.\n",
+    "generated_date": "2025-05-30T05:52:24.392061",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_9041",
+    "patient_age": 46,
+    "patient_gender": "Male",
+    "conditions": [
+      "stroke"
+    ],
+    "medications": [
+      "amoxicillin"
+    ],
+    "procedures": [
+      "CT scan"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 46 years\nGender: Male\nDate of Admission: 2025-05-27\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to stroke.\n\nMedical History:\nPatient has a known history of stroke. Patient reports compliance with prescribed medications.\n\nMedications:\n- Amoxicillin 100mg twice daily\n\nProcedures Performed:\n- Ct Scan: within normal limits\n\nAssessment and Plan:\nPatient's stroke is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nContinue medications as prescribed. Follow up with primary care physician. Maintain healthy diet and exercise as tolerated.\n\nFollow-up:\nFollow up with primary care in 2 weeks.\n",
+    "generated_date": "2025-05-30T05:52:24.392088",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_1067",
+    "patient_age": 64,
+    "patient_gender": "Male",
+    "conditions": [
+      "coronary artery disease",
+      "heart failure"
+    ],
+    "medications": [
+      "atorvastatin",
+      "metformin",
+      "aspirin",
+      "lisinopril"
+    ],
+    "procedures": [
+      "colonoscopy",
+      "MRI"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 64 years\nGender: Male\nDate of Admission: 2025-05-24\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to coronary artery disease.\n\nMedical History:\nPatient has a known history of coronary artery disease and heart failure. Patient reports compliance with prescribed medications.\n\nMedications:\n- Atorvastatin 5mg three times daily\n- Metformin 5mg twice daily\n- Aspirin 50mg daily\n- Lisinopril 50mg three times daily\n\nProcedures Performed:\n- Colonoscopy: abnormal\n- Mri: abnormal\n\nAssessment and Plan:\nPatient's coronary artery disease is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMaintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening. Continue medications as prescribed.\n\nFollow-up:\nFollow up with primary care in 1 week.\n",
+    "generated_date": "2025-05-30T05:52:24.392121",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_6142",
+    "patient_age": 48,
+    "patient_gender": "Male",
+    "conditions": [
+      "diabetes mellitus",
+      "myocardial infarction"
+    ],
+    "medications": [
+      "amoxicillin",
+      "lisinopril",
+      "aspirin",
+      "warfarin"
+    ],
+    "procedures": [
+      "stress test",
+      "blood work"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 48 years\nGender: Male\nDate of Admission: 2025-05-24\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to diabetes mellitus.\n\nMedical History:\nPatient has a known history of diabetes mellitus and myocardial infarction. Patient reports compliance with prescribed medications.\n\nMedications:\n- Amoxicillin 10mg three times daily\n- Lisinopril 25mg three times daily\n- Aspirin 25mg twice daily\n- Warfarin 50mg twice daily\n\nProcedures Performed:\n- Stress Test: normal\n- Blood Work: normal\n\nAssessment and Plan:\nPatient's diabetes mellitus is improving. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMaintain healthy diet and exercise as tolerated. Follow up with primary care physician. Continue medications as prescribed.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392158",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_5806",
+    "patient_age": 37,
+    "patient_gender": "Male",
+    "conditions": [
+      "atrial fibrillation",
+      "hypertension",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      "furosemide",
+      "metformin",
+      "prednisone"
+    ],
+    "procedures": [
+      "echocardiogram"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 37 years\nGender: Male\nDate of Admission: 2025-05-22\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to atrial fibrillation.\n\nMedical History:\nPatient has a known history of atrial fibrillation, hypertension and chronic kidney disease. Patient reports compliance with prescribed medications.\n\nMedications:\n- Furosemide 100mg twice daily\n- Metformin 25mg three times daily\n- Prednisone 25mg twice daily\n\nProcedures Performed:\n- Echocardiogram: shows improvement\n\nAssessment and Plan:\nPatient's atrial fibrillation is improving. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMaintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening. Follow up with primary care physician.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392186",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_2802",
+    "patient_age": 85,
+    "patient_gender": "Female",
+    "conditions": [
+      "hypertension"
+    ],
+    "medications": [
+      "atorvastatin",
+      "metoprolol",
+      "lisinopril"
+    ],
+    "procedures": [
+      "stress test"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 85 years\nGender: Female\nDate of Admission: 2025-05-29\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to hypertension.\n\nMedical History:\nPatient has a known history of hypertension. Patient reports compliance with prescribed medications.\n\nMedications:\n- Atorvastatin 25mg daily\n- Metoprolol 25mg twice daily\n- Lisinopril 10mg twice daily\n\nProcedures Performed:\n- Stress Test: normal\n\nAssessment and Plan:\nPatient's hypertension is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMonitor symptoms and return if worsening. Follow up with primary care physician. Continue medications as prescribed.\n\nFollow-up:\nFollow up with primary care in 1 week.\n",
+    "generated_date": "2025-05-30T05:52:24.392230",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_4318",
+    "patient_age": 90,
+    "patient_gender": "Male",
+    "conditions": [
+      "heart failure",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      "metoprolol"
+    ],
+    "procedures": [
+      "colonoscopy",
+      "EKG"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 90 years\nGender: Male\nDate of Admission: 2025-05-27\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to heart failure.\n\nMedical History:\nPatient has a known history of heart failure and chronic kidney disease. Patient reports compliance with prescribed medications.\n\nMedications:\n- Metoprolol 5mg twice daily\n\nProcedures Performed:\n- Colonoscopy: abnormal\n- Ekg: abnormal\n\nAssessment and Plan:\nPatient's heart failure is improving. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMonitor symptoms and return if worsening. Continue medications as prescribed. Follow up with primary care physician.\n\nFollow-up:\nFollow up with primary care in 1 week.\n",
+    "generated_date": "2025-05-30T05:52:24.392274",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_1924",
+    "patient_age": 40,
+    "patient_gender": "Male",
+    "conditions": [
+      "atrial fibrillation",
+      "heart failure"
+    ],
+    "medications": [
+      "warfarin",
+      "aspirin",
+      "insulin",
+      "metformin"
+    ],
+    "procedures": [
+      "blood work"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 40 years\nGender: Male\nDate of Admission: 2025-05-24\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to atrial fibrillation.\n\nMedical History:\nPatient has a known history of atrial fibrillation and heart failure. Patient reports compliance with prescribed medications.\n\nMedications:\n- Warfarin 5mg daily\n- Aspirin 10mg three times daily\n- Insulin 25mg daily\n- Metformin 50mg daily\n\nProcedures Performed:\n- Blood Work: abnormal\n\nAssessment and Plan:\nPatient's atrial fibrillation is improving. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nFollow up with primary care physician. Continue medications as prescribed. Maintain healthy diet and exercise as tolerated.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392325",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_9038",
+    "patient_age": 40,
+    "patient_gender": "Male",
+    "conditions": [
+      "myocardial infarction",
+      "chronic kidney disease"
+    ],
+    "medications": [
+      "metoprolol",
+      "warfarin"
+    ],
+    "procedures": [
+      "CT scan",
+      "stress test"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 40 years\nGender: Male\nDate of Admission: 2025-05-27\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to myocardial infarction.\n\nMedical History:\nPatient has a known history of myocardial infarction and chronic kidney disease. Patient reports compliance with prescribed medications.\n\nMedications:\n- Metoprolol 50mg twice daily\n- Warfarin 50mg daily\n\nProcedures Performed:\n- Ct Scan: shows improvement\n- Stress Test: normal\n\nAssessment and Plan:\nPatient's myocardial infarction is well-controlled. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMonitor symptoms and return if worsening. Continue medications as prescribed. Follow up with primary care physician.\n\nFollow-up:\nFollow up with primary care in 1 week.\n",
+    "generated_date": "2025-05-30T05:52:24.392347",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_1011",
+    "patient_age": 45,
+    "patient_gender": "Female",
+    "conditions": [
+      "diabetes mellitus",
+      "chronic kidney disease",
+      "hypertension"
+    ],
+    "medications": [
+      "prednisone",
+      "furosemide",
+      "amoxicillin"
+    ],
+    "procedures": [
+      "CT scan"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 45 years\nGender: Female\nDate of Admission: 2025-05-28\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to diabetes mellitus.\n\nMedical History:\nPatient has a known history of diabetes mellitus, chronic kidney disease and hypertension. Patient reports compliance with prescribed medications.\n\nMedications:\n- Prednisone 100mg three times daily\n- Furosemide 10mg three times daily\n- Amoxicillin 10mg twice daily\n\nProcedures Performed:\n- Ct Scan: within normal limits\n\nAssessment and Plan:\nPatient's diabetes mellitus is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nContinue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.\n\nFollow-up:\nFollow up with primary care in 1 month.\n",
+    "generated_date": "2025-05-30T05:52:24.392369",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_6369",
+    "patient_age": 65,
+    "patient_gender": "Male",
+    "conditions": [
+      "COPD",
+      "myocardial infarction"
+    ],
+    "medications": [
+      "metformin",
+      "insulin",
+      "warfarin",
+      "amoxicillin"
+    ],
+    "procedures": [
+      "blood work",
+      "CT scan"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 65 years\nGender: Male\nDate of Admission: 2025-05-29\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to COPD.\n\nMedical History:\nPatient has a known history of COPD and myocardial infarction. Patient reports compliance with prescribed medications.\n\nMedications:\n- Metformin 50mg three times daily\n- Insulin 50mg twice daily\n- Warfarin 10mg daily\n- Amoxicillin 100mg three times daily\n\nProcedures Performed:\n- Blood Work: abnormal\n- Ct Scan: shows improvement\n\nAssessment and Plan:\nPatient's COPD is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMonitor symptoms and return if worsening. Maintain healthy diet and exercise as tolerated. Continue medications as prescribed.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392395",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_8753",
+    "patient_age": 35,
+    "patient_gender": "Female",
+    "conditions": [
+      "myocardial infarction"
+    ],
+    "medications": [
+      "metformin",
+      "warfarin",
+      "aspirin",
+      "metoprolol"
+    ],
+    "procedures": [
+      "blood work"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 35 years\nGender: Female\nDate of Admission: 2025-05-29\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to myocardial infarction.\n\nMedical History:\nPatient has a known history of myocardial infarction. Patient reports compliance with prescribed medications.\n\nMedications:\n- Metformin 50mg twice daily\n- Warfarin 5mg three times daily\n- Aspirin 10mg twice daily\n- Metoprolol 25mg daily\n\nProcedures Performed:\n- Blood Work: abnormal\n\nAssessment and Plan:\nPatient's myocardial infarction is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nFollow up with primary care physician. Monitor symptoms and return if worsening. Maintain healthy diet and exercise as tolerated.\n\nFollow-up:\nFollow up with primary care in 2 weeks.\n",
+    "generated_date": "2025-05-30T05:52:24.392418",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_2467",
+    "patient_age": 53,
+    "patient_gender": "Male",
+    "conditions": [
+      "diabetes mellitus",
+      "atrial fibrillation"
+    ],
+    "medications": [
+      "atorvastatin",
+      "insulin",
+      "amoxicillin"
+    ],
+    "procedures": [
+      "EKG",
+      "stress test"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 53 years\nGender: Male\nDate of Admission: 2025-05-29\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to diabetes mellitus.\n\nMedical History:\nPatient has a known history of diabetes mellitus and atrial fibrillation. Patient reports compliance with prescribed medications.\n\nMedications:\n- Atorvastatin 100mg twice daily\n- Insulin 5mg twice daily\n- Amoxicillin 100mg twice daily\n\nProcedures Performed:\n- Ekg: within normal limits\n- Stress Test: shows improvement\n\nAssessment and Plan:\nPatient's diabetes mellitus is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nContinue medications as prescribed. Follow up with primary care physician. Monitor symptoms and return if worsening.\n\nFollow-up:\nFollow up with primary care in 1 week.\n",
+    "generated_date": "2025-05-30T05:52:24.392439",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_3334",
+    "patient_age": 76,
+    "patient_gender": "Male",
+    "conditions": [
+      "chronic kidney disease",
+      "myocardial infarction"
+    ],
+    "medications": [
+      "aspirin",
+      "prednisone"
+    ],
+    "procedures": [
+      "colonoscopy",
+      "MRI"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 76 years\nGender: Male\nDate of Admission: 2025-05-25\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to chronic kidney disease.\n\nMedical History:\nPatient has a known history of chronic kidney disease and myocardial infarction. Patient reports compliance with prescribed medications.\n\nMedications:\n- Aspirin 5mg three times daily\n- Prednisone 5mg twice daily\n\nProcedures Performed:\n- Colonoscopy: abnormal\n- Mri: within normal limits\n\nAssessment and Plan:\nPatient's chronic kidney disease is well-controlled. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMaintain healthy diet and exercise as tolerated. Continue medications as prescribed. Monitor symptoms and return if worsening.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392459",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_8491",
+    "patient_age": 79,
+    "patient_gender": "Female",
+    "conditions": [
+      "diabetes mellitus",
+      "hypertension",
+      "stroke"
+    ],
+    "medications": [
+      "metformin"
+    ],
+    "procedures": [
+      "stress test",
+      "EKG"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 79 years\nGender: Female\nDate of Admission: 2025-05-29\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to diabetes mellitus.\n\nMedical History:\nPatient has a known history of diabetes mellitus, hypertension and stroke. Patient reports compliance with prescribed medications.\n\nMedications:\n- Metformin 25mg daily\n\nProcedures Performed:\n- Stress Test: normal\n- Ekg: normal\n\nAssessment and Plan:\nPatient's diabetes mellitus is well-controlled. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMonitor symptoms and return if worsening. Continue medications as prescribed. Maintain healthy diet and exercise as tolerated.\n\nFollow-up:\nFollow up with primary care in 2 weeks.\n",
+    "generated_date": "2025-05-30T05:52:24.392479",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_1482",
+    "patient_age": 62,
+    "patient_gender": "Male",
+    "conditions": [
+      "myocardial infarction",
+      "chronic kidney disease",
+      "diabetes mellitus"
+    ],
+    "medications": [
+      "furosemide",
+      "metformin"
+    ],
+    "procedures": [
+      "stress test"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 62 years\nGender: Male\nDate of Admission: 2025-05-22\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to myocardial infarction.\n\nMedical History:\nPatient has a known history of myocardial infarction, chronic kidney disease and diabetes mellitus. Patient reports compliance with prescribed medications.\n\nMedications:\n- Furosemide 100mg daily\n- Metformin 50mg three times daily\n\nProcedures Performed:\n- Stress Test: shows improvement\n\nAssessment and Plan:\nPatient's myocardial infarction is stable. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nMaintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening. Follow up with primary care physician.\n\nFollow-up:\nFollow up with primary care in 3 months.\n",
+    "generated_date": "2025-05-30T05:52:24.392500",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_1196",
+    "patient_age": 66,
+    "patient_gender": "Male",
+    "conditions": [
+      "heart failure",
+      "atrial fibrillation"
+    ],
+    "medications": [
+      "warfarin",
+      "furosemide",
+      "atorvastatin",
+      "metformin"
+    ],
+    "procedures": [
+      "MRI"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 66 years\nGender: Male\nDate of Admission: 2025-05-24\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to heart failure.\n\nMedical History:\nPatient has a known history of heart failure and atrial fibrillation. Patient reports compliance with prescribed medications.\n\nMedications:\n- Warfarin 5mg daily\n- Furosemide 50mg twice daily\n- Atorvastatin 5mg twice daily\n- Metformin 10mg three times daily\n\nProcedures Performed:\n- Mri: normal\n\nAssessment and Plan:\nPatient's heart failure is improving. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nFollow up with primary care physician. Maintain healthy diet and exercise as tolerated. Monitor symptoms and return if worsening.\n\nFollow-up:\nFollow up with primary care in 1 month.\n",
+    "generated_date": "2025-05-30T05:52:24.392522",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_8104",
+    "patient_age": 85,
+    "patient_gender": "Male",
+    "conditions": [
+      "heart failure"
+    ],
+    "medications": [
+      "aspirin",
+      "lisinopril",
+      "insulin"
+    ],
+    "procedures": [
+      "blood work"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 85 years\nGender: Male\nDate of Admission: 2025-05-27\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to heart failure.\n\nMedical History:\nPatient has a known history of heart failure. Patient reports compliance with prescribed medications.\n\nMedications:\n- Aspirin 25mg daily\n- Lisinopril 100mg twice daily\n- Insulin 50mg daily\n\nProcedures Performed:\n- Blood Work: shows improvement\n\nAssessment and Plan:\nPatient's heart failure is well-controlled. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nFollow up with primary care physician. Maintain healthy diet and exercise as tolerated. Continue medications as prescribed.\n\nFollow-up:\nFollow up with primary care in 1 week.\n",
+    "generated_date": "2025-05-30T05:52:24.392543",
+    "source": "synthetic"
+  },
+  {
+    "report_id": "RPT_2282",
+    "patient_age": 41,
+    "patient_gender": "Male",
+    "conditions": [
+      "chronic kidney disease",
+      "hypertension",
+      "heart failure"
+    ],
+    "medications": [
+      "prednisone",
+      "metformin",
+      "lisinopril",
+      "aspirin"
+    ],
+    "procedures": [
+      "blood work"
+    ],
+    "report_text": "PATIENT DISCHARGE SUMMARY\n\nPatient Demographics:\nAge: 41 years\nGender: Male\nDate of Admission: 2025-05-28\nDate of Discharge: 2025-05-30\n\nChief Complaint:\nPatient presented with symptoms related to chronic kidney disease.\n\nMedical History:\nPatient has a known history of chronic kidney disease, hypertension and heart failure. Patient reports compliance with prescribed medications.\n\nMedications:\n- Prednisone 5mg twice daily\n- Metformin 25mg twice daily\n- Lisinopril 10mg daily\n- Aspirin 5mg daily\n\nProcedures Performed:\n- Blood Work: shows improvement\n\nAssessment and Plan:\nPatient's chronic kidney disease is requires monitoring. Continue current treatment plan with modifications as noted.\n\nDischarge Instructions:\nContinue medications as prescribed. Maintain healthy diet and exercise as tolerated. Follow up with primary care physician.\n\nFollow-up:\nFollow up with primary care in 2 weeks.\n",
+    "generated_date": "2025-05-30T05:52:24.392565",
+    "source": "synthetic"
+  }
+]
