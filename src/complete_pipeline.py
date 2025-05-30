@@ -131,7 +131,7 @@ class MedicalTextProcessor:
     def preprocess_text(self, text: str) -> str:
         if not text or not isinstance(text, str):
             return ""
-
+    
         text = text.lower()
         
         # Expand medical abbreviations
@@ -139,12 +139,9 @@ class MedicalTextProcessor:
             pattern = r'\b' + re.escape(abbrev) + r'\b'
             text = re.sub(pattern, expansion, text, flags=re.IGNORECASE)
         
-        # Clean text
+        # Clean text but preserve medical numbers
         text = re.sub(r'[^\w\s\.\,\:\;\-\(\)\/]', ' ', text)
-        text = re.sub(r'\b\d{1,2}\/\d{1,2}\/\d{2,4}\b', 'DATE', text)
-        text = re.sub(r'\b\d{1,3}\/\d{1,3}\b', 'FRACTION', text)
-        text = re.sub(r'\b\d+\.\d+\b', 'NUMBER', text)
-        text = re.sub(r'\b\d+\b', 'NUMBER', text)
+        # Don't replace standalone numbers - they're important in medical context
         text = re.sub(r'\s+', ' ', text).strip()
         
         return text
