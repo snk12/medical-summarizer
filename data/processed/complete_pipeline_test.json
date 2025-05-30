@@ -1,0 +1,399 @@
+{
+  "document_info": {
+    "document_id": "test_document",
+    "processed_at": "2025-05-30T06:28:48.669554",
+    "processing_time_seconds": 11.80118727684021,
+    "original_length": 740,
+    "processed_length": 774
+  },
+  "text_analysis": {
+    "total_length": 774,
+    "sentence_count": 9,
+    "word_count": 123,
+    "content_word_count": 102,
+    "avg_sentence_length": 13.666666666666666
+  },
+  "entities": {
+    "conditions": [
+      {
+        "text": "stroke",
+        "confidence": 0.8,
+        "method": "rule-based"
+      }
+    ],
+    "medications": [
+      {
+        "text": "metformin",
+        "confidence": 0.8,
+        "method": "rule-based"
+      }
+    ],
+    "procedures": [],
+    "general": [
+      {
+        "text": "patient",
+        "confidence": "0.54488045",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "discharge",
+        "confidence": "0.5046858",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "summary patient demographic",
+        "confidence": "0.55195075",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "##s",
+        "confidence": "0.53292984",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ":",
+        "confidence": "0.5456575",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "age",
+        "confidence": "0.56727356",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ":",
+        "confidence": "0.54795295",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "number",
+        "confidence": "0.5314519",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "years gender : male",
+        "confidence": "0.53136456",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "date of admission",
+        "confidence": "0.6196682",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ":",
+        "confidence": "0.5454408",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "number - number - number date of discharge",
+        "confidence": "0.57702434",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ": number",
+        "confidence": "0.5354199",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "- number -",
+        "confidence": "0.54307467",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "number",
+        "confidence": "0.5107474",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "chief",
+        "confidence": "0.54564476",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "complaint :",
+        "confidence": "0.53679276",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "patient presented with",
+        "confidence": "0.59568644",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "symptoms",
+        "confidence": "0.6169063",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "related to stroke",
+        "confidence": "0.54854304",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ".",
+        "confidence": "0.50857335",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "medical history",
+        "confidence": "0.52336437",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ":",
+        "confidence": "0.50325894",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "patient has",
+        "confidence": "0.5694792",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "a",
+        "confidence": "0.5421801",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "known history of stroke",
+        "confidence": "0.57802993",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ". patient",
+        "confidence": "0.51600504",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "reports compliance with",
+        "confidence": "0.53966707",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "prescribed medications. medications : - metform",
+        "confidence": "0.570143",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "##in 25m",
+        "confidence": "0.56338274",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "##g twice daily procedures performed : - electrocardiogram : shows improvement -",
+        "confidence": "0.5807335",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "co",
+        "confidence": "0.57422906",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "##lon",
+        "confidence": "0.52546984",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "##oscopy",
+        "confidence": "0.53274953",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ": normal assessment and plan :",
+        "confidence": "0.58687574",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "patient s",
+        "confidence": "0.5356246",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "stroke",
+        "confidence": "0.5099004",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "is",
+        "confidence": "0.5548798",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "improving. continue current",
+        "confidence": "0.55496013",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "treatment plan",
+        "confidence": "0.5226383",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "with modifications",
+        "confidence": "0.5561055",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "as",
+        "confidence": "0.53609586",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "noted. discharge instructions : continue medications",
+        "confidence": "0.5485493",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "as",
+        "confidence": "0.5218505",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "prescribed",
+        "confidence": "0.6257878",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": ".",
+        "confidence": "0.5089163",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "monitor symptoms and return if worse",
+        "confidence": "0.5909127",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "##ning",
+        "confidence": "0.5138713",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ".",
+        "confidence": "0.5147978",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "follow up with primary care physician",
+        "confidence": "0.55960566",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ".",
+        "confidence": "0.5361714",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "follow - up",
+        "confidence": "0.5630361",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": ":",
+        "confidence": "0.56048244",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "follow up with",
+        "confidence": "0.57568103",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "primary care",
+        "confidence": "0.5225576",
+        "method": "ai",
+        "label": "LABEL_1"
+      },
+      {
+        "text": "in",
+        "confidence": "0.5870004",
+        "method": "ai",
+        "label": "LABEL_0"
+      },
+      {
+        "text": "number months.",
+        "confidence": "0.553469",
+        "method": "ai",
+        "label": "LABEL_1"
+      }
+    ]
+  },
+  "summaries": {
+    "extractive": "patient reports compliance with prescribed medications.. continue current treatment plan with modifications as noted.. discharge instructions: continue medications as prescribed.",
+    "abstractive": "Patient presented with symptoms related to stroke. Patient has a known history of stroke. Medications: Metformin 25mg twice daily. Ekg: shows improvement. Colonoscopy: normal. Follow up with primary care in 3 months.",
+    "method_comparison": {
+      "extractive_length": 20,
+      "abstractive_length": 32
+    }
+  },
+  "risk_assessment": {
+    "scores": {
+      "overall_risk": 45.6,
+      "condition_severity": 72.0,
+      "medication_risk": 32.0,
+      "urgency_level": 0.0,
+      "risk_category": "Moderate",
+      "confidence_score": 75.0
+    }
+  },
+  "processing_metadata": {
+    "success": true,
+    "error_message": null
+  }
+}
