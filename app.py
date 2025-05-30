@@ -181,8 +181,8 @@ Follow up with primary care in 2 weeks."""
     Patient Demographics:
     Age: 60 years
     Gender: Male
-    Date of Admission: 2025-05-29
-    Date of Discharge: 2025-05-30
+    Date of Admission: 2025-5-29
+    Date of Discharge: 2025-5-30
     
     Chief Complaint:
     Patient presented with symptoms related to stroke.
