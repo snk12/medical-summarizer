@@ -176,6 +176,35 @@ Follow up with primary care in 2 weeks."""
     
     st.text_area("Sample document:", value=sample_text, height=300, disabled=True)
     st.info("This is what a typical medical document looks like. The AI will extract entities, generate summaries, and assess risk levels.")
+    PATIENT DISCHARGE SUMMARY
+    
+    Patient Demographics:
+    Age: 60 years
+    Gender: Male
+    Date of Admission: 2025-05-29
+    Date of Discharge: 2025-05-30
+    
+    Chief Complaint:
+    Patient presented with symptoms related to stroke.
+    
+    Medical History:
+    Patient has a known history of stroke. Patient reports compliance with prescribed medications.
+    
+    Medications:
+    - Metformin 25mg twice daily
+    
+    Procedures Performed:
+    - Ekg: shows improvement
+    - Colonoscopy: normal
+    
+    Assessment and Plan:
+    Patient's stroke is improving. Continue current treatment plan with modifications as noted.
+    
+    Discharge Instructions:
+    Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
+    
+    Follow-up:
+    Follow up with primary care in 3 months.
 
 else:
     # Document input section
