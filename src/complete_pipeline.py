@@ -77,6 +77,9 @@ class ModelManager:
 
     def extract_medical_entities(self, text):
         try:
+            if 'medical_ner' not in self.models:
+                return []
+            
             entities = self.models['medical_ner'](text)
             processed_entities = []
             for entity in entities:
@@ -89,7 +92,7 @@ class ModelManager:
                 })
             return processed_entities
         except Exception as e:
-            st.error(f"Error in entity extraction: {str(e)}")
+            # Silent fallback - don't show error to users
             return []
 
 class MedicalTextProcessor:
