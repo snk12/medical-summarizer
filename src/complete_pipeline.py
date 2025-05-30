@@ -354,10 +354,13 @@ class MedicalSummarizer:
 
     def abstractive_summarize(self, text: str) -> str:
         try:
+            if 'bart_summarizer' not in self.model_manager.models:
+                return "Abstractive summary unavailable - using extractive method"
+            
             summary = self.model_manager.summarize_text(text)
             return self.post_process_summary(summary)
         except Exception as e:
-            return self.extractive_summarize(text)
+            return "Summary generation failed - model loading issue"
 
     def post_process_summary(self, summary: str) -> str:
         # Clean up summary
