@@ -14,166 +14,15 @@ from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 import streamlit as st
 
+# FIXED: Import the updated ModelManager instead of defining it here
+from model_manager import ModelManager
+
 # Download required NLTK data
 @st.cache_resource
 def download_nltk_data():
     nltk.download('punkt', quiet=True)
     nltk.download('stopwords', quiet=True)
     nltk.download('punkt_tab', quiet=True)
-
-class ModelManager:
-    def __init__(self, use_fine_tuned=False, fine_tuned_path='./fine_tuned_models/bart_medical/'):
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.models = {}
-        self.use_fine_tuned = use_fine_tuned
-        self.fine_tuned_path = fine_tuned_path
-        self.model_type = "pre-trained"  # Default
-        self.load_all_models()
-
-    @st.cache_resource
-    def load_all_models(_self):
-        models = {}
-        
-        with st.spinner("Loading Sentence Transformer..."):
-            models['sentence_transformer'] = SentenceTransformer('all-MiniLM-L6-v2')
-        
-        # Load BART summarizer (fine-tuned or pre-trained)
-        models['bart_summarizer'] = _self.load_bart_model()
-        
-        with st.spinner("Loading Medical NER..."):
-            models['medical_ner'] = hf_pipeline(
-                "ner",
-                model="emilyalsentzer/Bio_ClinicalBERT",
-                device=0 if _self.device == "cuda" else -1,
-                aggregation_strategy="simple"
-            )
-        
-        return models
-
-    def load_bart_model(self):
-        """Load BART model (fine-tuned if available, otherwise pre-trained)"""
-        import os
-        
-        if self.use_fine_tuned and os.path.exists(self.fine_tuned_path):
-            try:
-                with st.spinner(f"Loading fine-tuned BART from {self.fine_tuned_path}..."):
-                    print(f"🎯 Loading fine-tuned BART from {self.fine_tuned_path}")
-                    bart_model = hf_pipeline(
-                        "summarization",
-                        model=self.fine_tuned_path,
-                        device=-1,  # Force CPU for stability
-                        max_length=150,
-                        min_length=50,
-                        do_sample=False
-                    )
-                    self.model_type = "fine-tuned"
-                    print("✅ Fine-tuned BART loaded successfully!")
-                    return bart_model
-            except Exception as e:
-                print(f"⚠️ Failed to load fine-tuned model: {e}")
-                print("🔄 Falling back to pre-trained model...")
-        
-        # Load pre-trained model
-        with st.spinner("Loading BART Summarizer..."):
-            try:
-                print("📥 Loading pre-trained BART model...")
-                bart_model = hf_pipeline(
-                    "summarization",
-                    model="facebook/bart-large-cnn",
-                    device=-1,  # Force CPU
-                    max_length=150,
-                    min_length=50,
-                    do_sample=False
-                )
-                self.model_type = "pre-trained"
-                print("✅ Pre-trained BART loaded successfully!")
-                return bart_model
-            except Exception as e:
-                st.warning(f"BART model failed to load: {e}")
-                return None
-
-    def get_sentence_embeddings(self, sentences):
-        return self.models['sentence_transformer'].encode(sentences)
-
-    def summarize_text(self, text, max_length=150, min_length=50):
-        try:
-            if 'bart_summarizer' not in self.models or self.models['bart_summarizer'] is None:
-                raise Exception("BART model not available")
-            
-            words = text.split()
-            if len(words) > 800:
-                text = ' '.join(words[:800])
-            
-            result = self.models['bart_summarizer'](
-                text,
-                max_length=max_length,
-                min_length=min_length,
-                do_sample=False
-            )
-            return result[0]['summary_text']
-        except Exception as e:
-            raise Exception(f"BART summarization failed: {str(e)}")
-
-    def extract_medical_entities(self, text):
-        try:
-            if 'medical_ner' not in self.models:
-                return []
-            
-            entities = self.models['medical_ner'](text)
-            processed_entities = []
-            for entity in entities:
-                processed_entities.append({
-                    'text': entity.get('word', '').replace('##', ''),
-                    'label': entity.get('entity_group', 'UNKNOWN'),
-                    'confidence': entity.get('score', 0.5),
-                    'start': entity.get('start', 0),
-                    'end': entity.get('end', 0)
-                })
-            return processed_entities
-        except Exception as e:
-            # Silent fallback - don't show error to users
-            return []
-
-    def get_model_info(self):
-        import os
-        return {
-            'device': self.device,
-            'models_loaded': list(self.models.keys()),
-            'sentence_transformer': 'all-MiniLM-L6-v2',
-            'summarizer': f'BART ({self.model_type})',
-            'summarizer_path': self.fine_tuned_path if self.model_type == "fine-tuned" else "facebook/bart-large-cnn",
-            'medical_ner': 'emilyalsentzer/Bio_ClinicalBERT',
-            'fine_tuned_available': os.path.exists(self.fine_tuned_path) if hasattr(self, 'fine_tuned_path') else False
-        }
-
-    def compare_models(self, text, max_length=150):
-        """Compare pre-trained vs fine-tuned model outputs"""
-        if not hasattr(self, '_pretrained_pipeline'):
-            # Load pre-trained for comparison
-            self._pretrained_pipeline = hf_pipeline(
-                "summarization",
-                model="facebook/bart-large-cnn",
-                device=-1,
-                max_length=max_length,
-                min_length=50
-            )
-        
-        # Get summary from current model
-        current_summary = self.summarize_text(text, max_length)
-        
-        # Get summary from pre-trained model
-        try:
-            pretrained_result = self._pretrained_pipeline(text, max_length=max_length, min_length=50)
-            pretrained_summary = pretrained_result[0]['summary_text']
-        except:
-            pretrained_summary = "Error generating pre-trained summary"
-        
-        return {
-            'current_model': self.model_type,
-            'current_summary': current_summary,
-            'pretrained_summary': pretrained_summary,
-            'model_path': self.fine_tuned_path if self.model_type == "fine-tuned" else "facebook/bart-large-cnn"
-        }
 
 class MedicalTextProcessor:
     def __init__(self, model_manager):
@@ -442,7 +291,7 @@ class MedicalSummarizer:
             return self.extractive_summarize(text)
 
     def post_process_summary(self, summary: str) -> str:
-        # Clean up summary - FIX for your model's output
+        # Clean up summary - FIXED for your model's output
         summary = re.sub(r'(\w+)([A-Z])', r'\1. \2', summary)  # Add periods between sentences
         summary = re.sub(r'(male|female)(Chief)', r'\1. Chief', summary)  # Fix gender/chief complaint
         summary = re.sub(r'(Assessment|Plan|History):', r'. \1:', summary)  # Add periods before sections
@@ -696,6 +545,7 @@ class MedicalRiskScorer:
 
 class MedicalReportPipeline:
     def __init__(self, use_fine_tuned=False, fine_tuned_path='./fine_tuned_models/bart_medical/'):
+        # FIXED: Use the imported ModelManager with Hugging Face support
         self.model_manager = ModelManager(use_fine_tuned=use_fine_tuned, fine_tuned_path=fine_tuned_path)
         self.text_processor = MedicalTextProcessor(self.model_manager)
         self.summarizer = MedicalSummarizer(self.model_manager, self.text_processor)
