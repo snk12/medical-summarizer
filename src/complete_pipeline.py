@@ -442,13 +442,22 @@ class MedicalSummarizer:
             return self.extractive_summarize(text)
 
     def post_process_summary(self, summary: str) -> str:
-        # Clean up summary
+        # Clean up summary - FIX for your model's output
+        summary = re.sub(r'(\w+)([A-Z])', r'\1. \2', summary)  # Add periods between sentences
+        summary = re.sub(r'(male|female)(Chief)', r'\1. Chief', summary)  # Fix gender/chief complaint
+        summary = re.sub(r'(Assessment|Plan|History):', r'. \1:', summary)  # Add periods before sections
         summary = re.sub(r'\b(the patient|patient)\b', 'Patient', summary, flags=re.IGNORECASE)
         
+        # Ensure proper sentence ending
         if not summary.endswith('.'):
             summary += '.'
         
+        # Clean up extra spaces
         summary = re.sub(r'\s+', ' ', summary).strip()
+        
+        # Fix double periods
+        summary = re.sub(r'\.+', '.', summary)
+        
         return summary
 
 class MedicalRiskScorer:
