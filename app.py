@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
@@ -8,11 +7,11 @@ import json
 import time
 import io
 import base64
+import os
 from typing import Dict, Any
 
 # Import your pipeline components
 import sys
-import os
 sys.path.append('src')
 
 try:
@@ -85,6 +84,14 @@ st.markdown("""
         font-weight: bold;
         text-align: center;
     }
+    
+    .model-comparison {
+        background: #f0f8ff;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 2px solid #1f77b4;
+        margin: 1rem 0;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -93,6 +100,7 @@ if 'pipeline' not in st.session_state:
     st.session_state.pipeline = None
     st.session_state.processing_history = []
     st.session_state.current_result = None
+    st.session_state.show_comparison = False
 
 # Header
 st.markdown('<h1 class="main-header">🏥 Medical Document Analyzer</h1>', unsafe_allow_html=True)
@@ -103,22 +111,70 @@ with st.sidebar:
     st.header("🛠️ Configuration")
     
     # Pipeline initialization
-    if st.button("🚀 Initialize AI Pipeline", type="primary"):
-        with st.spinner("Loading AI models..."):
-            try:
-                st.session_state.pipeline = MedicalReportPipeline()
-                st.success("✅ Pipeline initialized successfully!")
-            except Exception as e:
-                st.error(f"❌ Failed to initialize pipeline: {str(e)}")
+    st.subheader("🚀 Initialize Pipeline")
+    col1, col2 = st.columns(1)
+    
+    # Check if fine-tuned model exists
+    fine_tuned_path = './fine_tuned_models/bart_medical/'
+    fine_tuned_available = os.path.exists(fine_tuned_path)
+    
+    if fine_tuned_available:
+        st.success("🎯 Fine-tuned BART model detected!")
+        
+        if st.button("🎯 Initialize Fine-tuned Pipeline", type="primary"):
+            with st.spinner("Loading fine-tuned models..."):
+                try:
+                    st.session_state.pipeline = MedicalReportPipeline(use_fine_tuned=True)
+                    st.success("✅ Fine-tuned pipeline initialized!")
+                except Exception as e:
+                    st.error(f"❌ Failed to initialize pipeline: {str(e)}")
+        
+        if st.button("📝 Initialize Standard Pipeline", type="secondary"):
+            with st.spinner("Loading standard models..."):
+                try:
+                    st.session_state.pipeline = MedicalReportPipeline(use_fine_tuned=False)
+                    st.success("✅ Standard pipeline initialized!")
+                except Exception as e:
+                    st.error(f"❌ Failed to initialize pipeline: {str(e)}")
+    else:
+        st.warning("⚠️ Fine-tuned model not found")
+        st.info("💡 Run the Colab notebook to create a fine-tuned model")
+        
+        if st.button("📝 Initialize Standard Pipeline", type="primary"):
+            with st.spinner("Loading standard models..."):
+                try:
+                    st.session_state.pipeline = MedicalReportPipeline(use_fine_tuned=False)
+                    st.success("✅ Standard pipeline initialized!")
+                except Exception as e:
+                    st.error(f"❌ Failed to initialize pipeline: {str(e)}")
     
     st.markdown("---")
     
     # Model information
     if st.session_state.pipeline:
         st.subheader("📊 Model Status")
-        st.success("🤖 BART Summarizer: Ready")
+        model_info = st.session_state.pipeline.model_manager.get_model_info()
+        
+        # Show model type
+        if model_info['summarizer'].endswith('(fine-tuned)'):
+            st.success(f"🎯 {model_info['summarizer']}")
+        else:
+            st.info(f"📝 {model_info['summarizer']}")
+            
         st.success("🏥 ClinicalBERT: Ready")
         st.success("🔤 SentenceTransformer: Ready")
+        
+        # Show fine-tuned model availability
+        if model_info.get('fine_tuned_available', False):
+            st.success("🎯 Fine-tuned model: Available")
+        else:
+            st.warning("⚠️ Fine-tuned model: Not found")
+        
+        # Model comparison button
+        if model_info.get('fine_tuned_available', False) and model_info['summarizer'].endswith('(fine-tuned)'):
+            if st.button("📊 Enable Model Comparison"):
+                st.session_state.show_comparison = True
+                st.success("✅ Comparison mode enabled!")
         
         # Processing statistics
         stats = st.session_state.pipeline.get_processing_stats()
@@ -135,55 +191,56 @@ with st.sidebar:
     st.subheader("⚙️ Settings")
     show_detailed_analysis = st.checkbox("Show detailed analysis", value=True)
     show_entity_confidence = st.checkbox("Show entity confidence", value=False)
-
-# Move this BEFORE the pipeline check
+    
+    st.markdown("---")
+    
+    # Quick Demo Samples
     st.subheader("📋 Quick Demo Samples")
     st.info("⚠️ Copy a sample below FIRST, then initialize the AI pipeline!")
     
     with st.expander("🔴 High Risk Stroke Patient", expanded=False):
         stroke_sample = """PATIENT DISCHARGE SUMMARY
-    
-    Patient Demographics:
-    Age: 60 years
-    Gender: Male
-    Date of Admission: 2025-5-29
-    Date of Discharge: 2025-5-30
-    
-    Chief Complaint:
-    Patient presented with symptoms related to stroke.
-    
-    Medical History:
-    Patient has a known history of stroke. Patient reports compliance with prescribed medications.
-    
-    Medications:
-    - Metformin 25mg twice daily
-    
-    Procedures Performed:
-    - Ekg: shows improvement
-    - Colonoscopy: normal
-    
-    Assessment and Plan:
-    Patient's stroke is improving. Continue current treatment plan with modifications as noted.
-    
-    Discharge Instructions:
-    Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
-    
-    Follow-up:
-    Follow up with primary care in 3 months."""
+
+Patient Demographics:
+Age: 60 years
+Gender: Male
+Date of Admission: 2025-5-29
+Date of Discharge: 2025-5-30
+
+Chief Complaint:
+Patient presented with symptoms related to stroke.
+
+Medical History:
+Patient has a known history of stroke. Patient reports compliance with prescribed medications.
+
+Medications:
+- Metformin 25mg twice daily
+
+Procedures Performed:
+- Ekg: shows improvement
+- Colonoscopy: normal
+
+Assessment and Plan:
+Patient's stroke is improving. Continue current treatment plan with modifications as noted.
+
+Discharge Instructions:
+Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
+
+Follow-up:
+Follow up with primary care in 3 months."""
         
         st.code(stroke_sample, language=None)
     
     with st.expander("🟡 Moderate Risk Diabetes", expanded=False):
         diabetes_sample = """Patient Demographics: Age: 45 years, Female
-    Chief Complaint: Routine diabetes management  
-    Medical History: Well-controlled diabetes mellitus type 2
-    Medications: Metformin 500mg twice daily
-    Assessment: Diabetes well-controlled
-    Follow-up: Primary care in 3 months"""
+Chief Complaint: Routine diabetes management  
+Medical History: Well-controlled diabetes mellitus type 2
+Medications: Metformin 500mg twice daily
+Assessment: Diabetes well-controlled
+Follow-up: Primary care in 3 months"""
         
         st.code(diabetes_sample, language=None)
 
-    
 # Main content area
 if not st.session_state.pipeline:
     st.info("👈 Please initialize the AI pipeline in the sidebar to begin.")
@@ -224,52 +281,6 @@ Follow up with primary care in 2 weeks."""
     
     st.text_area("Sample document:", value=sample_text, height=300, disabled=True)
     st.info("This is what a typical medical document looks like. The AI will extract entities, generate summaries, and assess risk levels.")
-    # Add after the existing sample document
-    st.subheader("📋 Quick Demo Samples")
-    st.info("Copy any sample below and paste into the text area above for instant demo!")
-    
-    with st.expander("🔴 High Risk Stroke Patient", expanded=False):
-       stroke_sample = """PATIENT DISCHARGE SUMMARY
-    
-    Patient Demographics:
-    Age: 60 years
-    Gender: Male
-    Date of Admission: 2025-5-29
-    Date of Discharge: 2025-5-30
-    
-    Chief Complaint:
-    Patient presented with symptoms related to stroke.
-    
-    Medical History:
-    Patient has a known history of stroke. Patient reports compliance with prescribed medications.
-    
-    Medications:
-    - Metformin 25mg twice daily
-    
-    Procedures Performed:
-    - Ekg: shows improvement
-    - Colonoscopy: normal
-    
-    Assessment and Plan:
-    Patient's stroke is improving. Continue current treatment plan with modifications as noted.
-    
-    Discharge Instructions:
-    Continue medications as prescribed. Monitor symptoms and return if worsening. Follow up with primary care physician.
-    
-    Follow-up:
-    Follow up with primary care in 3 months."""
-       
-       st.code(stroke_sample, language=None)
-    
-    with st.expander("🟡 Moderate Risk Diabetes", expanded=False):
-       diabetes_sample = """Patient Demographics: Age: 45 years, Female
-    Chief Complaint: Routine diabetes management
-    Medical History: Well-controlled diabetes mellitus type 2
-    Medications: Metformin 500mg twice daily
-    Assessment: Diabetes well-controlled
-    Follow-up: Primary care in 3 months"""
-       
-       st.code(diabetes_sample, language=None)
 
 else:
     # Document input section
@@ -339,11 +350,14 @@ if st.session_state.current_result and st.session_state.current_result['processi
     
     # Processing info
     doc_info = result['document_info']
+    model_info = st.session_state.pipeline.model_manager.get_model_info()
+    
     st.markdown(f"""
     <div class="processing-time">
     📄 Document: {doc_info['document_id']} | 
     ⏱️ Processed in {doc_info['processing_time_seconds']:.2f}s | 
-    📏 {doc_info['original_length']} characters
+    📏 {doc_info['original_length']} characters |
+    🤖 Model: {model_info['summarizer']}
     </div>
     """, unsafe_allow_html=True)
     
@@ -412,6 +426,39 @@ if st.session_state.current_result and st.session_state.current_result['processi
     
     summaries = result['summaries']
     
+    # Show model comparison if requested
+    if st.session_state.get('show_comparison', False) and st.session_state.pipeline:
+        try:
+            comparison = st.session_state.pipeline.model_manager.compare_models(document_text)
+            
+            st.markdown("### 🔍 Model Comparison")
+            st.markdown('<div class="model-comparison">', unsafe_allow_html=True)
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("#### 🎯 Fine-tuned BART")
+                st.markdown(f"""
+                <div class="summary-box">
+                {comparison['current_summary']}
+                </div>
+                """, unsafe_allow_html=True)
+                st.caption(f"Length: {len(comparison['current_summary'].split())} words")
+            
+            with col2:
+                st.markdown("#### 📝 Pre-trained BART")
+                st.markdown(f"""
+                <div class="summary-box">
+                {comparison['pretrained_summary']}
+                </div>
+                """, unsafe_allow_html=True)
+                st.caption(f"Length: {len(comparison['pretrained_summary'].split())} words")
+            
+            st.markdown('</div>', unsafe_allow_html=True)
+            st.markdown("---")
+        except Exception as e:
+            st.warning(f"Model comparison failed: {e}")
+    
     col1, col2 = st.columns(2)
     
     with col1:
@@ -478,9 +525,19 @@ if st.session_state.current_result and st.session_state.current_result['processi
 
 # Footer
 st.markdown("---")
-st.markdown("""
+footer_text = "🏥 Medical Document Analyzer | Powered by BART"
+if st.session_state.pipeline:
+    model_info = st.session_state.pipeline.model_manager.get_model_info()
+    if model_info['summarizer'].endswith('(fine-tuned)'):
+        footer_text += " (Fine-tuned)"
+    else:
+        footer_text += " (Pre-trained)"
+
+footer_text += ", ClinicalBERT & SentenceTransformers"
+
+st.markdown(f"""
 <div style="text-align: center; color: #666; padding: 1rem;">
-    🏥 Medical Document Analyzer | Powered by BART, ClinicalBERT & SentenceTransformers<br>
+    {footer_text}<br>
     Built with Streamlit | AI-Powered Medical Text Analysis
 </div>
 """, unsafe_allow_html=True)
